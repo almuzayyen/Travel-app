@@ -4,13 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon src/server/index.js",
+    "start": " node src/server/index.js",
     "build": "webpack   "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.1",
     "babel-polyfill": "^6.26.0",
@@ -34,6 +35,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6"
   }
 }
