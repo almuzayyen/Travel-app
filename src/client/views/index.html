@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">-->
+   <!--<link rel="stylesheet" href="style.css"> --> 
+</head>
+
+<body>
+    <div class= 'head'>
+        <div class="head-titel">
+           <h1> Travel App </h1>
+        </div>
+
+
+        <div class= 'main-container'>
+            <div class= "form-container" >
+        <form class="input-filed"  >
+        
+            <label class="city-label" for="city">Enter City Name</label>
+           <br>
+            <input type="text" id="city-id" name= "zip" placeholder="enter City Name">
+        
+           <br>
+            
+            <label  class="date-label"for="date">Enter Date</label>
+            <br>
+            <input  id="date-id" name="date" placeholder="Enter Date" ></input>
+            
+            
+        <br>
+        
+        <button id="generate" type="submit"> Get Information </button>
+        
+        </form>
+        </div>
+        <div class= "output-container">
+        
+            <form class="">
+            
+            <div id="entryHolder">
+                <div id="country" ></div>
+                <div id="temp"> </div>
+                <div id="pic">
+                   
+                </div>
+                </form>
+            
+        </div>
+    </div>
+    </div>
+   <!-- <script src="app.js" ></script> -->
+</div>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js').then(registraion => {
+                console.log('registraion is succesfull')
+            });
+        });
+    }
+    else {
+        console.log('service worker are not supported')
+    }
+</script>
+</body>
+
+</html>

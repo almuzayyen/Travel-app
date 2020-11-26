@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+.head-titel {
+  display: flex;
+  background-color: rgb(105, 207, 105);
+  color: white;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.main-container {
+  display: flex;
+  background-color: antiquewhite;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+  .form-container {
+    min-height: 30vh;
+    padding: 2rem;
+    label {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    #city-id {
+      margin: 1rem;
+      width: 100%;
+      height: 100%;
+    }
+    #date-id {
+      margin: 1rem;
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      margin: 1.5rem;
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(105, 207, 105);
+      color: white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    input {
+      padding: 1rem;
+      color: green;
+    }
+    button:hover {
+      border: 5px solid #4caf50;
+      color: black;
+    }
+  }
+
+  .output-container {
+    min-height: 30vh;
+    margin: 2rem;
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+    border: solid rgb(15, 15, 15) 3px;
+    img {
+      width: 50%;
+      height: 50%;
+    }
+    #country {
+      margin: 1rem;
+      font-size: 2rem;
+    }
+    #temp {
+      margin: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
